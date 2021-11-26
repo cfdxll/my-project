@@ -1,0 +1,16 @@
+#Source file type can be explicitly set at the end of each line
+#Supported file types: verilog vhdl systemverilog ip constraint dsp script
+#If source file type is not set, the source file type will be determined
+#by the file extension
+#All unsupported file types will not be read into Vivado. They will be
+#put under version control.
+
+
+../src/verilog/Led_Water.v
+../src/verilog/top.v
+
+../src/constrs/xilinx-kcu105-xcku040.xdc
+
+../script/vivado_non_project.tcl
+../script/file_list.txt
+
