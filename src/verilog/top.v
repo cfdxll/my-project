@@ -25,7 +25,7 @@ module top(
   input           clk300p  ,  //200MHz
   input           clk300n  ,
   //=============  
-  output [7:0] led        ,
+  (* mark_debug = "TRUE" *) output [7:0] led        ,
   //=============
   input            reset     // Active low
     );
@@ -40,7 +40,7 @@ localparam CLK_FREQ      = 'd300_000_000;  // The global clock frequency
 localparam LED_NUM       = 'd8          ;  // The number of LEDs on board  
 //===========sys clock==========
 wire sys_clk, sys_clk_bufg;
-wire rst_gc_n                      ;
+(* mark_debug = "TRUE" *) wire rst_gc_n                      ;
 assign rst_gc_n  =  reset    ;
 //========================  
 IBUFDS IBUFDS_inst_sys_clock(
