@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Dec  1 18:36:16 2021
+# Process ID: 7636
+# Current directory: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105
+# Command line: vivado -mode batch -source ./script/vivado_non_project.tcl -notrace -tclargs -cmd run -ifn ./script/file_list.txt -top spectrum_top -part xcku040-ffva1156-2-e
+# Log file: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/vivado.log
+# Journal file: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/vivado.jou
+#-----------------------------------------------------------
+source ./script/vivado_non_project.tcl -notrace
+    IfnOpt=./script/file_list.txt TopOpt=spectrum_top PartOpt=xcku040-ffva1156-2-e
+ERROR: Source ../src/verilog/Led_Water.v does not exist.
+ERROR: Source ../src/verilog/top.v does not exist.
+ERROR: Source ../src/constrs/xilinx-kcu105-xcku040.xdc does not exist.
+ERROR: Source ../script/vivado_non_project.tcl does not exist.
+ERROR: Source ../script/file_list.txt does not exist.
+Command: synth_design -top spectrum_top -part xcku040-ffva1156-2-e
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  1 18:36:23 2021...

@@ -1,0 +1,1230 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Nov 26 17:02:12 2021
+# Process ID: 30575
+# Current directory: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run
+# Command line: vivado -mode batch -source ../script/vivado_non_project.tcl -notrace -tclargs -cmd run -ifn ../script/file_list.txt -top top -part xcku040-ffva1156-2-e
+# Log file: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run/vivado.log
+# Journal file: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run/vivado.jou
+#-----------------------------------------------------------
+source ../script/vivado_non_project.tcl -notrace
+    IfnOpt=../script/file_list.txt TopOpt=top PartOpt=xcku040-ffva1156-2-e
+WARNING: Unsupported file extension .txt for ../script/file_list.txt
+WARNING: Unsupported source type misc. ../script/file_list.txt will be version controlled.
+Command: synth_design -top top -part xcku040-ffva1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30608 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2225.594 ; gain = 197.684 ; free physical = 876 ; free virtual = 10896
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/top.v:23]
+	Parameter CLK_FREQ bound to: 300000000 - type: integer 
+	Parameter LED_NUM bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/home/bscuser/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32952]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [/home/bscuser/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32952]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/bscuser/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [/home/bscuser/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'Led_Water' [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/Led_Water.v:23]
+	Parameter CLK_FREQ bound to: 300000000 - type: integer 
+	Parameter LED_NUM bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Led_Water' (3#1) [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/Led_Water.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'LED_o' does not match port width (8) of module 'Led_Water' [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/top.v:62]
+WARNING: [Synth 8-3848] Net led in module/entity top does not have driver. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/top.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'top' (4#1) [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/top.v:23]
+WARNING: [Synth 8-3331] design top has unconnected port led[7]
+WARNING: [Synth 8-3331] design top has unconnected port led[6]
+WARNING: [Synth 8-3331] design top has unconnected port led[5]
+WARNING: [Synth 8-3331] design top has unconnected port led[4]
+WARNING: [Synth 8-3331] design top has unconnected port led[3]
+WARNING: [Synth 8-3331] design top has unconnected port led[2]
+WARNING: [Synth 8-3331] design top has unconnected port led[1]
+WARNING: [Synth 8-3331] design top has unconnected port led[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2288.344 ; gain = 260.434 ; free physical = 901 ; free virtual = 10931
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2288.344 ; gain = 260.434 ; free physical = 889 ; free virtual = 10926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2288.344 ; gain = 260.434 ; free physical = 889 ; free virtual = 10926
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2299.250 ; gain = 0.000 ; free physical = 880 ; free virtual = 10918
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc]
+WARNING: [Vivado 12-584] No ports matched 'button*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:12]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports button*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:12]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'switch*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:13]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports switch*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:13]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Designutils 20-1307] Command '---' is not supported in the xdc constraint file. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:15]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout0'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:16]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:16]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout1'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:16]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:16]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks mmcm_clkout0]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:16]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout1'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:17]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:17]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout0'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:17]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:17]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks mmcm_clkout1]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:17]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'switch[0]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[1]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[2]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[3]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button[0]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button[1]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button[2]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button[3]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button[4]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[0]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[1]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[2]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[3]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[4]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[5]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[6]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[7]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[2]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[8]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[8]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[9]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[10]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[11]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[12]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[13]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[14]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio[15]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_scl'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_sda'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_mreset'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gtrefclk_n'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gtrefclk_p'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eint'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'emdc'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'emdio'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'erst'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rxn'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rxp'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'txn'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'txp'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eint'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'emdc'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'emdio'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'erst'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rxn'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rxp'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'txn'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'txp'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gtrefclk_n'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gtrefclk_p'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gtrefclk_p'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:127]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports gtrefclk_p]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:127]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~  *core_resets_i/rst_dly_reg*/PRE}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:129]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~  *core_resets_i/rst_dly_reg*/PRE}]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:129]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~  *core_clocking_i/clk312_buf/O}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:130]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of [get_pins -hier -filter {name =~  *core_clocking_i/clk312_buf/O}]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~  *core_clocking_i/clk625_buf/O}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:131]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of [get_pins -hier -filter {name =~  *core_clocking_i/clk625_buf/O}]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *SYNC_*/data_sync*/D }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:134]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ *SYNC_*/data_sync*/D }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:134]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *SYNC_*/reset_sync*/PRE }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:135]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ *SYNC_*/reset_sync*/PRE }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:135]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/*_dom_ch_reg/D }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:137]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/*_dom_ch_reg/D }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:137]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~  */lvds_transceiver_mw/serdes_1_to_10_ser8_i/rxclk_r_reg/D}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:138]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~  */lvds_transceiver_mw/serdes_1_to_10_ser8_i/rxclk_r_reg/D}]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:138]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/loop2[*].ram_ins*/RAM*/CLK }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:140]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/loop0[*].dataout_reg[*]/D }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:140]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/loop2[*].ram_ins*/RAM*/CLK }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:140]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/loop2[*].ram_ins*/RAM*/CLK }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:141]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/loop0[*].dataout_reg[*]/D }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:141]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/loop2[*].ram_ins*/RAM*/CLK }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:141]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/loop2[*].ram_ins*/RAM*/CLK }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:142]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/rxdh*/D }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:142]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/loop2[*].ram_ins*/RAM*/CLK }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:142]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/iserdes_m/RST }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:143]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/iserdes_m/RST }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:143]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/iserdes_s/RST }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:144]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/iserdes_s/RST }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:144]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/oserdes_m/RST }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:145]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/oserdes_m/RST }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:145]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */*sync_speed_10*/data_sync*/D }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:146]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ */*sync_speed_10*/data_sync*/D }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:146]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */*gen_sync_reset/reset_sync*/PRE }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:147]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ */*gen_sync_reset/reset_sync*/PRE }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:147]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter { name =~ */*reset_sync_inter*/*sync*/PRE }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:148]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter { name =~ */*reset_sync_inter*/*sync*/PRE }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:148]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter { name =~ */*reset_sync_output_cl*/*sync*/PRE }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:149]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter { name =~ */*reset_sync_output_cl*/*sync*/PRE }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:149]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter { name =~ */*reset_sync_rxclk_div*/*sync*/PRE }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:150]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter { name =~ */*reset_sync_rxclk_div*/*sync*/PRE }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:150]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter { name =~ */*reset_rxclk_div*/*sync*/PRE }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:151]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter { name =~ */*reset_rxclk_div*/*sync*/PRE }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:151]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~  */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/read_enable_reg/C}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:153]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/read_enable_dom_ch_reg/D}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:153]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hier -filter {name =~  */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/read_enable_reg/C}]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:153]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/read_enable_reg/C}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:154]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/read_enabler_reg/D}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:154]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/read_enable_reg/C}]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:154]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_nobuf'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:157]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:157]
+WARNING: [Vivado 12-627] No clocks matched 'clk125*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:157]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:157]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks clk_nobuf]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:157]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_nobuf'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:158]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:158]
+WARNING: [Vivado 12-627] No clocks matched 'clk125*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:158]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:158]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks clk125*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:158]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:161]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:161]
+WARNING: [Vivado 12-627] No clocks matched 'clk125*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:161]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:161]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks mmcm_clkout*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:161]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:162]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:162]
+WARNING: [Vivado 12-627] No clocks matched 'clk125*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:162]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:162]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks clk125*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:162]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_nobuf'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:169]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:169]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *sgmii*/userclk2_rst/* }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:169]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks clk_nobuf]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:169]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:170]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:170]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *sgmii*/userclk2_rst/* }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:170]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks mmcm_clkout*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:170]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'dsuctsn'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dsurtsn'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dsurx'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dsutx'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dsu*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dm_n[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dqs_c[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dqs_t[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_act_n'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_odt[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_ck_t[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_ck_c[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:188]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:188]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_addr[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_ba[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:190]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_bg[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_cke[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_reset_n'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_addr[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_act_n'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_ba[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_bg[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:199]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:199]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_cke[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_ck_c[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_ck_t[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:202]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_odt[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dqs_t[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dqs_c[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_cs_n[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dm_n[*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[0]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[1]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:210]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:210]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[2]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:211]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:211]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[3]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:212]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:212]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[4]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:213]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[5]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:214]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:214]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[6]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:215]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[7]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[8]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:217]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[9]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[10]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[11]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:220]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:220]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr4_dq[12]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:221]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:221]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2435.094 ; gain = 0.000 ; free physical = 832 ; free virtual = 10871
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2435.094 ; gain = 0.000 ; free physical = 833 ; free virtual = 10872
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2435.094 ; gain = 407.184 ; free physical = 885 ; free virtual = 10907
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2435.094 ; gain = 407.184 ; free physical = 885 ; free virtual = 10907
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2435.094 ; gain = 407.184 ; free physical = 884 ; free virtual = 10907
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2435.094 ; gain = 407.184 ; free physical = 871 ; free virtual = 10902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Led_Water 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design top has unconnected port led[7]
+WARNING: [Synth 8-3331] design top has unconnected port led[6]
+WARNING: [Synth 8-3331] design top has unconnected port led[5]
+WARNING: [Synth 8-3331] design top has unconnected port led[4]
+WARNING: [Synth 8-3331] design top has unconnected port led[3]
+WARNING: [Synth 8-3331] design top has unconnected port led[2]
+WARNING: [Synth 8-3331] design top has unconnected port led[1]
+WARNING: [Synth 8-3331] design top has unconnected port led[0]
+WARNING: [Synth 8-3331] design top has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2435.094 ; gain = 407.184 ; free physical = 859 ; free virtual = 10901
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 2467.766 ; gain = 439.855 ; free physical = 643 ; free virtual = 10669
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 2467.766 ; gain = 439.855 ; free physical = 643 ; free virtual = 10668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 2477.781 ; gain = 449.871 ; free physical = 641 ; free virtual = 10667
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 2491.656 ; gain = 463.746 ; free physical = 632 ; free virtual = 10666
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 2491.656 ; gain = 463.746 ; free physical = 632 ; free virtual = 10666
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 2491.656 ; gain = 463.746 ; free physical = 632 ; free virtual = 10666
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 2491.656 ; gain = 463.746 ; free physical = 632 ; free virtual = 10666
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 2491.656 ; gain = 463.746 ; free physical = 632 ; free virtual = 10666
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 2491.656 ; gain = 463.746 ; free physical = 632 ; free virtual = 10666
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |IBUFDS |     1|
+|3     |OBUFT  |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    10|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 2491.656 ; gain = 463.746 ; free physical = 632 ; free virtual = 10666
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2491.656 ; gain = 316.996 ; free physical = 653 ; free virtual = 10687
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 2491.664 ; gain = 463.746 ; free physical = 653 ; free virtual = 10687
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2491.664 ; gain = 0.000 ; free physical = 647 ; free virtual = 10681
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports button*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:12]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports switch*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:13]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Designutils 20-1307] Command '---' is not supported in the xdc constraint file. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:15]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:16]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout0'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:16]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:16]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout1'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:16]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:16]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks mmcm_clkout0]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:16]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout1'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:17]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:17]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout0'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:17]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:17]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks mmcm_clkout1]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:17]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports gtrefclk_p]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:127]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~  *core_resets_i/rst_dly_reg*/PRE}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:129]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~  *core_resets_i/rst_dly_reg*/PRE}]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:129]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~  *core_clocking_i/clk312_buf/O}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:130]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of [get_pins -hier -filter {name =~  *core_clocking_i/clk312_buf/O}]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:130]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~  *core_clocking_i/clk625_buf/O}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:131]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of [get_pins -hier -filter {name =~  *core_clocking_i/clk625_buf/O}]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:131]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *SYNC_*/data_sync*/D }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:134]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ *SYNC_*/data_sync*/D }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:134]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *SYNC_*/reset_sync*/PRE }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:135]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ *SYNC_*/reset_sync*/PRE }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:135]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/*_dom_ch_reg/D }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:137]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/*_dom_ch_reg/D }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:137]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~  */lvds_transceiver_mw/serdes_1_to_10_ser8_i/rxclk_r_reg/D}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:138]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~  */lvds_transceiver_mw/serdes_1_to_10_ser8_i/rxclk_r_reg/D}]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:138]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/loop2[*].ram_ins*/RAM*/CLK }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:140]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/loop0[*].dataout_reg[*]/D }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:140]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/loop2[*].ram_ins*/RAM*/CLK }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:140]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/loop2[*].ram_ins*/RAM*/CLK }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:141]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/loop0[*].dataout_reg[*]/D }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:141]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/loop2[*].ram_ins*/RAM*/CLK }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:141]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/loop2[*].ram_ins*/RAM*/CLK }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:142]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/rxdh*/D }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:142]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/loop2[*].ram_ins*/RAM*/CLK }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:142]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/iserdes_m/RST }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:143]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/iserdes_m/RST }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:143]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/iserdes_s/RST }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:144]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/iserdes_s/RST }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:144]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/oserdes_m/RST }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:145]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/oserdes_m/RST }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:145]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */*sync_speed_10*/data_sync*/D }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:146]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ */*sync_speed_10*/data_sync*/D }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:146]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */*gen_sync_reset/reset_sync*/PRE }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:147]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter {name =~ */*gen_sync_reset/reset_sync*/PRE }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:147]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter { name =~ */*reset_sync_inter*/*sync*/PRE }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:148]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter { name =~ */*reset_sync_inter*/*sync*/PRE }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:148]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter { name =~ */*reset_sync_output_cl*/*sync*/PRE }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:149]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter { name =~ */*reset_sync_output_cl*/*sync*/PRE }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:149]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter { name =~ */*reset_sync_rxclk_div*/*sync*/PRE }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:150]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter { name =~ */*reset_sync_rxclk_div*/*sync*/PRE }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:150]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter { name =~ */*reset_rxclk_div*/*sync*/PRE }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:151]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins -hier -filter { name =~ */*reset_rxclk_div*/*sync*/PRE }]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:151]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~  */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/read_enable_reg/C}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:153]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/read_enable_dom_ch_reg/D}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:153]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hier -filter {name =~  */lvds_transceiver_mw/serdes_10_to_1_ser8_i/gb0/read_enable_reg/C}]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:153]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/read_enable_reg/C}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:154]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/read_enabler_reg/D}'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:154]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hier -filter {name =~ */lvds_transceiver_mw/serdes_1_to_10_ser8_i/gb0/read_enable_reg/C}]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:154]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_nobuf'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:157]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:157]
+WARNING: [Vivado 12-627] No clocks matched 'clk125*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:157]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:157]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks clk_nobuf]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:157]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_nobuf'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:158]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:158]
+WARNING: [Vivado 12-627] No clocks matched 'clk125*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:158]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:158]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks clk125*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:158]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:161]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:161]
+WARNING: [Vivado 12-627] No clocks matched 'clk125*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:161]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:161]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks mmcm_clkout*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:161]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:162]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:162]
+WARNING: [Vivado 12-627] No clocks matched 'clk125*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:162]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:162]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_clocks clk125*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:162]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_nobuf'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:169]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:169]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *sgmii*/userclk2_rst/* }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:169]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks clk_nobuf]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:169]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'mmcm_clkout*'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:170]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:170]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *sgmii*/userclk2_rst/* }'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:170]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks mmcm_clkout*]'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:170]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-750] There are no ChipScope debug cores in this design. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:543]
+WARNING: [Vivado 12-750] There are no ChipScope debug cores in this design. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:544]
+WARNING: [Vivado 12-750] There are no ChipScope debug cores in this design. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:545]
+WARNING: [Vivado 12-507] No nets matched 'clk'. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:546]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc:546]
+Finished Parsing XDC File [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/xilinx-kcu105-xcku040.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2666.926 ; gain = 0.000 ; free physical = 630 ; free virtual = 10673
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 211 Warnings, 163 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:51 . Memory (MB): peak = 2666.926 ; gain = 1155.695 ; free physical = 762 ; free virtual = 10805
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2666.926 ; gain = 0.000 ; free physical = 762 ; free virtual = 10805
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2698.941 ; gain = 0.000 ; free physical = 760 ; free virtual = 10806
+INFO: [Common 17-1381] The checkpoint '/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run/top_syn.dcp' has been generated.
+INFO: [Chipscope 16-244] No debug cores were found in this design.
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2730.957 ; gain = 32.012 ; free physical = 762 ; free virtual = 10805
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1a916fafc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 762 ; free virtual = 10805
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1a916fafc
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 634 ; free virtual = 10676
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1a916fafc
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 634 ; free virtual = 10676
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: eec654b3
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 634 ; free virtual = 10676
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: eec654b3
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 649 ; free virtual = 10676
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: eec654b3
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 649 ; free virtual = 10676
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: eec654b3
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 649 ; free virtual = 10676
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               2  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 642 ; free virtual = 10676
+Ending Logic Optimization Task | Checksum: 1241802a7
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 642 ; free virtual = 10676
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1241802a7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 641 ; free virtual = 10675
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1241802a7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 641 ; free virtual = 10675
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 641 ; free virtual = 10675
+Ending Netlist Obfuscation Task | Checksum: 1241802a7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2730.957 ; gain = 0.000 ; free physical = 641 ; free virtual = 10675
+INFO: [Common 17-83] Releasing license: Implementation
+77 Infos, 211 Warnings, 163 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2757.770 ; gain = 0.000 ; free physical = 622 ; free virtual = 10664
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: c2cd9b29
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2757.770 ; gain = 0.000 ; free physical = 622 ; free virtual = 10664
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2757.770 ; gain = 0.000 ; free physical = 622 ; free virtual = 10664
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: c2cd9b29
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3461.188 ; gain = 703.418 ; free physical = 411 ; free virtual = 10292
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1236de2e3
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3493.203 ; gain = 735.434 ; free physical = 417 ; free virtual = 10299
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1236de2e3
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3493.203 ; gain = 735.434 ; free physical = 417 ; free virtual = 10299
+Phase 1 Placer Initialization | Checksum: 1236de2e3
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3493.203 ; gain = 735.434 ; free physical = 417 ; free virtual = 10299
+
+Phase 2 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 417 ; free virtual = 10299
+Phase 2 Final Placement Cleanup | Checksum: 1236de2e3
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3493.203 ; gain = 735.434 ; free physical = 417 ; free virtual = 10299
+INFO: [Place 30-281] No place-able instance is found; design doesn't contain any instance or all instances are placed
+Ending Placer Task | Checksum: c2cd9b29
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3493.203 ; gain = 735.434 ; free physical = 417 ; free virtual = 10299
+INFO: [Common 17-83] Releasing license: Implementation
+88 Infos, 211 Warnings, 163 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 3493.203 ; gain = 762.246 ; free physical = 426 ; free virtual = 10308
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 40f422aa ConstDB: 0 ShapeSum: 81d9787f RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1b51a237d
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 229 ; free virtual = 10055
+Post Restoration Checksum: NetGraph: d5bcdaf2 NumContArr: df5d488b Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 2.1 Create Timer | Checksum: 1b51a237d
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 214 ; free virtual = 10039
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1b51a237d
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 155 ; free virtual = 9989
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1b51a237d
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 155 ; free virtual = 9989
+
+Phase 2.4 Global Clock Net Routing
+Phase 2.4 Global Clock Net Routing | Checksum: 1b51a237d
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 269 ; free virtual = 9990
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 1b51a237d
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 264 ; free virtual = 9993
+Phase 2 Router Initialization | Checksum: 1b51a237d
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 264 ; free virtual = 9993
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 2
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 2
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+ Number of Nodes with overlaps = 0
+Phase 3 Initial Routing | Checksum: 145b24715
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 249 ; free virtual = 9978
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+Phase 4.1 Global Iteration 0 | Checksum: 145b24715
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 249 ; free virtual = 9977
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 145b24715
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 249 ; free virtual = 9977
+Phase 4 Rip-up And Reroute | Checksum: 145b24715
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 249 ; free virtual = 9977
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 145b24715
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 249 ; free virtual = 9977
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 145b24715
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 249 ; free virtual = 9977
+Phase 5 Delay and Skew Optimization | Checksum: 145b24715
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 249 ; free virtual = 9977
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 145b24715
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 249 ; free virtual = 9977
+Phase 6.1 Hold Fix Iter | Checksum: 145b24715
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 249 ; free virtual = 9977
+Phase 6 Post Hold Fix | Checksum: 145b24715
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 249 ; free virtual = 9977
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 145b24715
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 239 ; free virtual = 9976
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 145b24715
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 238 ; free virtual = 9974
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 145b24715
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 237 ; free virtual = 9974
+
+Phase 10 Post Router Timing
+Phase 10 Post Router Timing | Checksum: 145b24715
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 240 ; free virtual = 9977
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:29 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 303 ; free virtual = 10040
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+96 Infos, 211 Warnings, 163 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:30 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 303 ; free virtual = 10040
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 303 ; free virtual = 10040
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3493.203 ; gain = 0.000 ; free physical = 300 ; free virtual = 10040
+INFO: [Common 17-1381] The checkpoint '/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run/top_routed.dcp' has been generated.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/bscuser/eda/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Nov 26 17:04:21 2021. For additional details about this file, please refer to the WebTalk help file at /home/bscuser/eda/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+112 Infos, 211 Warnings, 163 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 3613.844 ; gain = 120.641 ; free physical = 350 ; free virtual = 10018
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 26 17:04:21 2021...

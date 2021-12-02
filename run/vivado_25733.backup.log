@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Nov 26 16:38:07 2021
+# Process ID: 25733
+# Current directory: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run
+# Command line: vivado -mode batch -source ../script/vivado_non_project.tcl -notrace -tclargs -cmd run -ifn ../script/file_list.txt -top top -part xcku040-ffva1156-2-e
+# Log file: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run/vivado.log
+# Journal file: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run/vivado.jou
+#-----------------------------------------------------------
+source ../script/vivado_non_project.tcl -notrace
+    IfnOpt=../script/file_list.txt TopOpt=top PartOpt=xcku040-ffva1156-2-e
+WARNING: Unsupported file extension .txt for ../script/file_list.txt
+WARNING: Unsupported source type misc. ../script/file_list.txt will be version controlled.
+Command: synth_design -top top -part xcku040-ffva1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25769 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2225.594 ; gain = 197.684 ; free physical = 1251 ; free virtual = 11184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/top.v:23]
+	Parameter CLK_FREQ bound to: 300000000 - type: integer 
+	Parameter LED_NUM bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/home/bscuser/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32952]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [/home/bscuser/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32952]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/bscuser/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [/home/bscuser/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+ERROR: [Synth 8-439] module 'mmcm' not found [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/top.v:83]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2288.344 ; gain = 260.434 ; free physical = 1279 ; free virtual = 11213
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+8 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 26 16:38:33 2021...
