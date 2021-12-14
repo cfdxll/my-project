@@ -1,0 +1,340 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 14 17:55:15 2021
+# Process ID: 24271
+# Current directory: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run
+# Command line: vivado -mode batch -source ../script/vivado_non_project.tcl -notrace -tclargs -cmd run -ifn ../script/file_list.txt -top top -part xcku040-ffva1156-2-e
+# Log file: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run/vivado.log
+# Journal file: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run/vivado.jou
+#-----------------------------------------------------------
+source ../script/vivado_non_project.tcl -notrace
+    IfnOpt=../script/file_list.txt TopOpt=top PartOpt=xcku040-ffva1156-2-e
+WARNING: Unsupported file extension .txt for ../script/file_list.txt
+WARNING: Unsupported source type misc. ../script/file_list.txt will be version controlled.
+Command: synth_design -top top -part xcku040-ffva1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24286 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2230.551 ; gain = 198.684 ; free physical = 4218 ; free virtual = 10851
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/top.v:23]
+	Parameter CLK_FREQ bound to: 300000000 - type: integer 
+	Parameter LED_NUM bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/top.v:42]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/top.v:47]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/home/bscuser/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32952]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [/home/bscuser/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32952]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/bscuser/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [/home/bscuser/eda/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'Led_Water' [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/Led_Water.v:23]
+	Parameter CLK_FREQ bound to: 300000000 - type: integer 
+	Parameter LED_NUM bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Led_Water' (3#1) [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/Led_Water.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_Led_Water'. This will prevent further optimization [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/top.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'top' (4#1) [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/verilog/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2292.301 ; gain = 260.434 ; free physical = 4239 ; free virtual = 10885
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2295.270 ; gain = 263.402 ; free physical = 4234 ; free virtual = 10880
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2295.270 ; gain = 263.402 ; free physical = 4234 ; free virtual = 10880
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2303.207 ; gain = 0.000 ; free physical = 4225 ; free virtual = 10871
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/top.xdc]
+Finished Parsing XDC File [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2440.051 ; gain = 0.000 ; free physical = 4179 ; free virtual = 10825
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2440.051 ; gain = 0.000 ; free physical = 4179 ; free virtual = 10825
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2440.051 ; gain = 408.184 ; free physical = 4232 ; free virtual = 10864
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2440.051 ; gain = 408.184 ; free physical = 4232 ; free virtual = 10864
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2440.051 ; gain = 408.184 ; free physical = 4231 ; free virtual = 10863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2440.051 ; gain = 408.184 ; free physical = 4211 ; free virtual = 10858
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Led_Water 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2440.051 ; gain = 408.184 ; free physical = 4199 ; free virtual = 10849
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 2480.582 ; gain = 448.715 ; free physical = 3983 ; free virtual = 10620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 2502.613 ; gain = 470.746 ; free physical = 3971 ; free virtual = 10615
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 2502.613 ; gain = 470.746 ; free physical = 3970 ; free virtual = 10613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2508.551 ; gain = 476.684 ; free physical = 3976 ; free virtual = 10613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2508.551 ; gain = 476.684 ; free physical = 3976 ; free virtual = 10613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2508.551 ; gain = 476.684 ; free physical = 3976 ; free virtual = 10613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2508.551 ; gain = 476.684 ; free physical = 3976 ; free virtual = 10613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2508.551 ; gain = 476.684 ; free physical = 3976 ; free virtual = 10613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2508.551 ; gain = 476.684 ; free physical = 3976 ; free virtual = 10613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY8 |     4|
+|3     |LUT1   |     1|
+|4     |LUT2   |     7|
+|5     |LUT4   |     7|
+|6     |LUT5   |    33|
+|7     |LUT6   |     1|
+|8     |FDRE   |    39|
+|9     |FDSE   |     1|
+|10    |IBUF   |     1|
+|11    |IBUFDS |     1|
+|12    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+----------+------+
+|      |Instance         |Module    |Cells |
++------+-----------------+----------+------+
+|1     |top              |          |   104|
+|2     |  inst_Led_Water |Led_Water |    93|
++------+-----------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2508.551 ; gain = 476.684 ; free physical = 3976 ; free virtual = 10613
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2508.551 ; gain = 331.902 ; free physical = 3991 ; free virtual = 10634
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2508.559 ; gain = 476.684 ; free physical = 3991 ; free virtual = 10634
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2517.457 ; gain = 0.000 ; free physical = 3984 ; free virtual = 10628
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/top.xdc]
+Finished Parsing XDC File [/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/src/constrs/top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2582.191 ; gain = 0.000 ; free physical = 4004 ; free virtual = 10647
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 2582.191 ; gain = 1066.957 ; free physical = 4131 ; free virtual = 10781
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2582.191 ; gain = 0.000 ; free physical = 4131 ; free virtual = 10781
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2620.145 ; gain = 5.938 ; free physical = 4129 ; free virtual = 10781
+INFO: [Common 17-1381] The checkpoint '/home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run/top_syn.dcp' has been generated.
+ERROR: [Vivado 12-5829] Unable to generate LTX file since debug core UUIDs are unavailable for unimplemented cores. Resolution: Issue the write_debug_probes TCL command after opt_design (or implement_debug_core) step has been run
+ERROR: [Common 17-39] 'write_debug_probes' failed due to earlier errors.
+
+    while executing
+"write_debug_probes -force $TopOpt\.ltx"
+    invoked from within
+"if {$CmdOpt == "run"} {
+    if {[llength $listVerilogFiles]} {
+        read_verilog $listVerilogFiles
+    }
+    
+    if {[llength $listSysVFiles]} {
+ ..."
+    (file "../script/vivado_non_project.tcl" line 223)
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 14 17:56:15 2021...

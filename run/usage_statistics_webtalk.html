@@ -4,10 +4,10 @@
   <TR ALIGN='CENTER' BGCOLOR='#A7BFDE'><TD COLSPAN='4'><B>software_version_and_target_device</B></TD></TR>
 <TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>beta</B></TD><TD>FALSE</TD>
   <TD BGCOLOR='#DBE5F1'><B>build_version</B></TD><TD>2708876</TD>
-</TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>date_generated</B></TD><TD>Wed Dec  1 18:40:35 2021</TD>
+</TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>date_generated</B></TD><TD>Tue Dec 14 18:05:23 2021</TD>
   <TD BGCOLOR='#DBE5F1'><B>os_platform</B></TD><TD>LIN64</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>product_version</B></TD><TD>Vivado v2019.2 (64-bit)</TD>
-  <TD BGCOLOR='#DBE5F1'><B>project_id</B></TD><TD>87f1721664bb469e8b7062d0740dfd72</TD>
+  <TD BGCOLOR='#DBE5F1'><B>project_id</B></TD><TD>a0360c34e6914975a6c9b7b596ee764d</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>project_iteration</B></TD><TD>1</TD>
   <TD BGCOLOR='#DBE5F1'><B>random_id</B></TD><TD>fab0063791fe548e899582b1eba0b0ce</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>registration_id</B></TD><TD>211772790_1777499456_210736958_801</TD>
@@ -21,7 +21,7 @@
  <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
   <TR ALIGN='CENTER' BGCOLOR='#A7BFDE'><TD COLSPAN='4'><B>user_environment</B></TD></TR>
 <TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>cpu_name</B></TD><TD>Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz</TD>
-  <TD BGCOLOR='#DBE5F1'><B>cpu_speed</B></TD><TD>3143.100 MHz</TD>
+  <TD BGCOLOR='#DBE5F1'><B>cpu_speed</B></TD><TD>2850.751 MHz</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>os_name</B></TD><TD>Ubuntu</TD>
   <TD BGCOLOR='#DBE5F1'><B>os_release</B></TD><TD>Ubuntu 18.04.6 LTS</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>system_ram</B></TD><TD>16.000 GB</TD>
@@ -67,11 +67,19 @@
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>post_unisim_transformation</B></TD></TR>
 <TR ALIGN='LEFT'>    <TD>bufgce=1</TD>
+    <TD>carry8=4</TD>
     <TD>diffinbuf=1</TD>
-    <TD>gnd=1</TD>
-    <TD>ibufctrl=1</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut1=8</TD>
-    <TD>obuft=8</TD>
+    <TD>fdre=39</TD>
+</TR><TR ALIGN='LEFT'>    <TD>fdse=1</TD>
+    <TD>gnd=2</TD>
+    <TD>ibufctrl=2</TD>
+    <TD>inbuf=1</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut1=1</TD>
+    <TD>lut2=7</TD>
+    <TD>lut4=7</TD>
+    <TD>lut5=33</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut6=1</TD>
+    <TD>obuf=8</TD>
     <TD>vcc=2</TD>
 </TR>   </TABLE>
    </TD></TR>
@@ -79,11 +87,88 @@
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>pre_unisim_transformation</B></TD></TR>
 <TR ALIGN='LEFT'>    <TD>bufg=1</TD>
-    <TD>gnd=1</TD>
+    <TD>carry8=4</TD>
+    <TD>fdre=39</TD>
+    <TD>fdse=1</TD>
+</TR><TR ALIGN='LEFT'>    <TD>gnd=1</TD>
+    <TD>ibuf=1</TD>
     <TD>ibufds=1</TD>
-    <TD>lut1=8</TD>
-</TR><TR ALIGN='LEFT'>    <TD>obuft=8</TD>
+    <TD>lut1=1</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut2=7</TD>
+    <TD>lut4=7</TD>
+    <TD>lut5=33</TD>
+    <TD>lut6=1</TD>
+</TR><TR ALIGN='LEFT'>    <TD>obuf=8</TD>
     <TD>vcc=1</TD>
+</TR>   </TABLE>
+   </TD></TR>
+  </TABLE><BR>
+ <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
+  <TR ALIGN='CENTER' BGCOLOR='#A7BFDE'><TD COLSPAN='1'><B>power_opt_design</B></TD></TR>
+   <TR><TD>
+   <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
+    <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>command_line_options_spo</B></TD></TR>
+<TR ALIGN='LEFT'>    <TD>-cell_types=default::all</TD>
+    <TD>-clocks=default::[not_specified]</TD>
+    <TD>-exclude_cells=default::[not_specified]</TD>
+    <TD>-include_cells=default::[not_specified]</TD>
+</TR>   </TABLE>
+   </TD></TR>
+   <TR><TD>
+   <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
+    <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>usage</B></TD></TR>
+<TR ALIGN='LEFT'>    <TD>bram_ports_augmented=1</TD>
+    <TD>bram_ports_newly_gated=0</TD>
+    <TD>bram_ports_total=2</TD>
+    <TD>flow_state=default</TD>
+</TR><TR ALIGN='LEFT'>    <TD>slice_registers_augmented=0</TD>
+    <TD>slice_registers_newly_gated=0</TD>
+    <TD>slice_registers_total=1772</TD>
+    <TD>srls_augmented=0</TD>
+</TR><TR ALIGN='LEFT'>    <TD>srls_newly_gated=0</TD>
+    <TD>srls_total=100</TD>
+</TR>   </TABLE>
+   </TD></TR>
+  </TABLE><BR>
+ <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
+  <TR ALIGN='CENTER' BGCOLOR='#A7BFDE'><TD COLSPAN='1'><B>ip_statistics</B></TD></TR>
+   <TR><TD>
+   <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
+    <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>labtools_ila_v6_00_a/1</B></TD></TR>
+<TR ALIGN='LEFT'>    <TD>all_probe_same_mu=true</TD>
+    <TD>all_probe_same_mu_cnt=1</TD>
+    <TD>c_adv_trigger=false</TD>
+    <TD>c_data_depth=1024</TD>
+</TR><TR ALIGN='LEFT'>    <TD>c_en_strg_qual=false</TD>
+    <TD>c_input_pipe_stages=0</TD>
+    <TD>c_num_of_probes=2</TD>
+    <TD>c_probe0_type=1</TD>
+</TR><TR ALIGN='LEFT'>    <TD>c_probe0_width=8</TD>
+    <TD>c_probe1_type=2</TD>
+    <TD>c_probe1_width=1</TD>
+    <TD>c_trigin_en=0</TD>
+</TR><TR ALIGN='LEFT'>    <TD>c_trigout_en=0</TD>
+    <TD>component_name=u_ila_0_CV</TD>
+    <TD>core_container=NA</TD>
+    <TD>iptotal=1</TD>
+</TR>   </TABLE>
+   </TD></TR>
+   <TR><TD>
+   <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
+    <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>labtools_xsdbm_v3_00_a/1</B></TD></TR>
+<TR ALIGN='LEFT'>    <TD>c_bscan_mode=false</TD>
+    <TD>c_bscan_mode_with_core=false</TD>
+    <TD>c_clk_input_freq_hz=300000000</TD>
+    <TD>c_en_bscanid_vec=false</TD>
+</TR><TR ALIGN='LEFT'>    <TD>c_enable_clk_divider=false</TD>
+    <TD>c_num_bscan_master_ports=0</TD>
+    <TD>c_two_prim_mode=false</TD>
+    <TD>c_use_ext_bscan=false</TD>
+</TR><TR ALIGN='LEFT'>    <TD>c_user_scan_chain=1</TD>
+    <TD>c_xsdb_num_slaves=1</TD>
+    <TD>component_name=dbg_hub_CV</TD>
+    <TD>core_container=NA</TD>
+</TR><TR ALIGN='LEFT'>    <TD>iptotal=1</TD>
 </TR>   </TABLE>
    </TD></TR>
   </TABLE><BR>
@@ -131,10 +216,10 @@
    <TR><TD>
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>usage</B></TD></TR>
-<TR ALIGN='LEFT'>    <TD>elapsed=00:00:31s</TD>
+<TR ALIGN='LEFT'>    <TD>elapsed=00:00:30s</TD>
     <TD>hls_ip=0</TD>
-    <TD>memory_gain=956.652MB</TD>
-    <TD>memory_peak=2491.699MB</TD>
+    <TD>memory_gain=969.559MB</TD>
+    <TD>memory_peak=2508.605MB</TD>
 </TR>   </TABLE>
    </TD></TR>
   </TABLE><BR>

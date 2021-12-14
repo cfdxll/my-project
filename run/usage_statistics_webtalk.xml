@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed Dec  1 18:40:35 2021'>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Tue Dec 14 18:05:24 2021'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="2708876" description="" />
-  <keyValuePair key="date_generated" value="Wed Dec  1 18:40:35 2021" description="" />
+  <keyValuePair key="date_generated" value="Tue Dec 14 18:05:23 2021" description="" />
   <keyValuePair key="os_platform" value="LIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2019.2 (64-bit)" description="" />
-  <keyValuePair key="project_id" value="87f1721664bb469e8b7062d0740dfd72" description="" />
+  <keyValuePair key="project_id" value="a0360c34e6914975a6c9b7b596ee764d" description="" />
   <keyValuePair key="project_iteration" value="1" description="" />
   <keyValuePair key="random_id" value="fab0063791fe548e899582b1eba0b0ce" description="" />
   <keyValuePair key="registration_id" value="211772790_1777499456_210736958_801" description="" />
@@ -20,13 +20,68 @@
  </section>
  <section name="user_environment" level="1" order="2" description="">
   <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz" description="" />
-  <keyValuePair key="cpu_speed" value="3143.100 MHz" description="" />
+  <keyValuePair key="cpu_speed" value="2850.751 MHz" description="" />
   <keyValuePair key="os_name" value="Ubuntu" description="" />
   <keyValuePair key="os_release" value="Ubuntu 18.04.6 LTS" description="" />
   <keyValuePair key="system_ram" value="16.000 GB" description="" />
   <keyValuePair key="total_processors" value="1" description="" />
  </section>
- <section name="synthesis" level="1" order="3" description="">
+ <section name="ip_statistics" level="1" order="3" description="">
+  <section name="labtools_ila_v6_00_a/1" level="2" order="1" description="">
+   <keyValuePair key="all_probe_same_mu" value="true" description="" />
+   <keyValuePair key="all_probe_same_mu_cnt" value="1" description="" />
+   <keyValuePair key="c_adv_trigger" value="false" description="" />
+   <keyValuePair key="c_data_depth" value="1024" description="" />
+   <keyValuePair key="c_en_strg_qual" value="false" description="" />
+   <keyValuePair key="c_input_pipe_stages" value="0" description="" />
+   <keyValuePair key="c_num_of_probes" value="2" description="" />
+   <keyValuePair key="c_probe0_type" value="1" description="" />
+   <keyValuePair key="c_probe0_width" value="8" description="" />
+   <keyValuePair key="c_probe1_type" value="2" description="" />
+   <keyValuePair key="c_probe1_width" value="1" description="" />
+   <keyValuePair key="c_trigin_en" value="0" description="" />
+   <keyValuePair key="c_trigout_en" value="0" description="" />
+   <keyValuePair key="component_name" value="u_ila_0_CV" description="" />
+   <keyValuePair key="core_container" value="NA" description="" />
+   <keyValuePair key="iptotal" value="1" description="" />
+  </section>
+  <section name="labtools_xsdbm_v3_00_a/1" level="2" order="2" description="">
+   <keyValuePair key="c_bscan_mode" value="false" description="" />
+   <keyValuePair key="c_bscan_mode_with_core" value="false" description="" />
+   <keyValuePair key="c_clk_input_freq_hz" value="300000000" description="" />
+   <keyValuePair key="c_en_bscanid_vec" value="false" description="" />
+   <keyValuePair key="c_enable_clk_divider" value="false" description="" />
+   <keyValuePair key="c_num_bscan_master_ports" value="0" description="" />
+   <keyValuePair key="c_two_prim_mode" value="false" description="" />
+   <keyValuePair key="c_use_ext_bscan" value="false" description="" />
+   <keyValuePair key="c_user_scan_chain" value="1" description="" />
+   <keyValuePair key="c_xsdb_num_slaves" value="1" description="" />
+   <keyValuePair key="component_name" value="dbg_hub_CV" description="" />
+   <keyValuePair key="core_container" value="NA" description="" />
+   <keyValuePair key="iptotal" value="1" description="" />
+  </section>
+ </section>
+ <section name="power_opt_design" level="1" order="4" description="">
+  <section name="command_line_options_spo" level="2" order="1" description="">
+   <keyValuePair key="-cell_types" value="default::all" description="" />
+   <keyValuePair key="-clocks" value="default::[not_specified]" description="" />
+   <keyValuePair key="-exclude_cells" value="default::[not_specified]" description="" />
+   <keyValuePair key="-include_cells" value="default::[not_specified]" description="" />
+  </section>
+  <section name="usage" level="2" order="2" description="">
+   <keyValuePair key="bram_ports_augmented" value="1" description="" />
+   <keyValuePair key="bram_ports_newly_gated" value="0" description="" />
+   <keyValuePair key="bram_ports_total" value="2" description="" />
+   <keyValuePair key="flow_state" value="default" description="" />
+   <keyValuePair key="slice_registers_augmented" value="0" description="" />
+   <keyValuePair key="slice_registers_newly_gated" value="0" description="" />
+   <keyValuePair key="slice_registers_total" value="1772" description="" />
+   <keyValuePair key="srls_augmented" value="0" description="" />
+   <keyValuePair key="srls_newly_gated" value="0" description="" />
+   <keyValuePair key="srls_total" value="100" description="" />
+  </section>
+ </section>
+ <section name="synthesis" level="1" order="5" description="">
   <section name="command_line_options" level="2" order="1" description="">
    <keyValuePair key="-assert" value="default::[not_specified]" description="" />
    <keyValuePair key="-bufg" value="default::12" description="" />
@@ -64,32 +119,48 @@
    <keyValuePair key="-verilog_define" value="default::[not_specified]" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
-   <keyValuePair key="elapsed" value="00:00:31s" description="" />
+   <keyValuePair key="elapsed" value="00:00:30s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
-   <keyValuePair key="memory_gain" value="956.652MB" description="" />
-   <keyValuePair key="memory_peak" value="2491.699MB" description="" />
+   <keyValuePair key="memory_gain" value="969.559MB" description="" />
+   <keyValuePair key="memory_peak" value="2508.605MB" description="" />
   </section>
  </section>
- <section name="unisim_transformation" level="1" order="4" description="">
+ <section name="unisim_transformation" level="1" order="6" description="">
   <section name="post_unisim_transformation" level="2" order="1" description="">
    <keyValuePair key="bufgce" value="1" description="" />
+   <keyValuePair key="carry8" value="4" description="" />
    <keyValuePair key="diffinbuf" value="1" description="" />
-   <keyValuePair key="gnd" value="1" description="" />
-   <keyValuePair key="ibufctrl" value="1" description="" />
-   <keyValuePair key="lut1" value="8" description="" />
-   <keyValuePair key="obuft" value="8" description="" />
+   <keyValuePair key="fdre" value="39" description="" />
+   <keyValuePair key="fdse" value="1" description="" />
+   <keyValuePair key="gnd" value="2" description="" />
+   <keyValuePair key="ibufctrl" value="2" description="" />
+   <keyValuePair key="inbuf" value="1" description="" />
+   <keyValuePair key="lut1" value="1" description="" />
+   <keyValuePair key="lut2" value="7" description="" />
+   <keyValuePair key="lut4" value="7" description="" />
+   <keyValuePair key="lut5" value="33" description="" />
+   <keyValuePair key="lut6" value="1" description="" />
+   <keyValuePair key="obuf" value="8" description="" />
    <keyValuePair key="vcc" value="2" description="" />
   </section>
   <section name="pre_unisim_transformation" level="2" order="2" description="">
    <keyValuePair key="bufg" value="1" description="" />
+   <keyValuePair key="carry8" value="4" description="" />
+   <keyValuePair key="fdre" value="39" description="" />
+   <keyValuePair key="fdse" value="1" description="" />
    <keyValuePair key="gnd" value="1" description="" />
+   <keyValuePair key="ibuf" value="1" description="" />
    <keyValuePair key="ibufds" value="1" description="" />
-   <keyValuePair key="lut1" value="8" description="" />
-   <keyValuePair key="obuft" value="8" description="" />
+   <keyValuePair key="lut1" value="1" description="" />
+   <keyValuePair key="lut2" value="7" description="" />
+   <keyValuePair key="lut4" value="7" description="" />
+   <keyValuePair key="lut5" value="33" description="" />
+   <keyValuePair key="lut6" value="1" description="" />
+   <keyValuePair key="obuf" value="8" description="" />
    <keyValuePair key="vcc" value="1" description="" />
   </section>
  </section>
- <section name="vivado_usage" level="1" order="5" description="">
+ <section name="vivado_usage" level="1" order="7" description="">
   <section name="project_data" level="2" order="1" description="">
    <keyValuePair key="constraintsetcount" value="1" description="" />
    <keyValuePair key="core_container" value="false" description="" />

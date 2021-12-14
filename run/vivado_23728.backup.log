@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 14 17:51:41 2021
+# Process ID: 23728
+# Current directory: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run
+# Command line: vivado -mode batch -source ../script/vivado_non_project.tcl -notrace -tclargs -cmd run -ifn ../script/file_list.txt -top spectrum_top -part xcku040-ffva1156-2-e
+# Log file: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run/vivado.log
+# Journal file: /home/bscuser/Documents/work/GitLab/git_vivado_kcu105/run/vivado.jou
+#-----------------------------------------------------------
+source ../script/vivado_non_project.tcl -notrace
+    IfnOpt=../script/file_list.txt TopOpt=spectrum_top PartOpt=xcku040-ffva1156-2-e
+WARNING: Unsupported file extension .txt for ../script/file_list.txt
+WARNING: Unsupported source type misc. ../script/file_list.txt will be version controlled.
+Command: synth_design -top spectrum_top -part xcku040-ffva1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23784 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2230.582 ; gain = 198.715 ; free physical = 3132 ; free virtual = 9839
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-439] module 'spectrum_top' not found
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2292.332 ; gain = 260.465 ; free physical = 3140 ; free virtual = 9871
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 14 17:52:08 2021...
